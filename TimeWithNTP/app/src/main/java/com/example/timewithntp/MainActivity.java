@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
                 updateSystemTime();
                 updateNetworkTime();
-                handler.postDelayed(this, 1000); // Uppdatera varje sekund
+                handler.postDelayed(this, 1000); 
             }
         }, 1000);
     }
@@ -52,9 +52,9 @@ public class MainActivity extends AppCompatActivity {
         String time = timeFormat.format(date);
         systemTimeTextView.setText("System Time: " + time);
 
-        // Ändra storlek och färg för systemtiden
-        systemTimeTextView.setTextSize(46); // Ange önskad textstorlek
-        systemTimeTextView.setTextColor(Color.RED); // Ange önskad textfärg
+        
+        systemTimeTextView.setTextSize(46); 
+        systemTimeTextView.setTextColor(Color.RED); 
     }
 
     private void updateNetworkTime() {
@@ -71,10 +71,11 @@ public class MainActivity extends AppCompatActivity {
                     Date networkTime = new Date(info.getReturnTime());
                     String time = timeFormat.format(networkTime);
 
-                    // Ändra storlek och färg för nätverkstiden
+                    
                     runOnUiThread(() -> {
-                        networkTimeTextView.setTextSize(46); // Ange önskad textstorlek
-                        networkTimeTextView.setTextColor(Color.GREEN); // Ange önskad textfärg
+                        networkTimeTextView.setTextSize(46); 
+
+                        networkTimeTextView.setTextColor(Color.GREEN); 
                         networkTimeTextView.setText("Network Time: " + time);
                     });
                 } catch (Exception e) {
