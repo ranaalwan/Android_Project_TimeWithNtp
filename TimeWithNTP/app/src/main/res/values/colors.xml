@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <color name="systemTimeBackground">#009688</color> <!-- Blå färg för systemtid -->
-    <color name="networkTimeBackground">#e74c3c</color> <!-- Röd färg för nätverkstid -->
+    <color name="systemTimeBackground">#009688</color> 
+    <color name="networkTimeBackground">#e74c3c</color> 
 </resources>
